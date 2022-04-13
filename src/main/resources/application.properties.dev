@@ -1,0 +1,27 @@
+#GLOBAL
+quarkus.datasource.db-kind=postgresql
+quarkus.datasource.username=quarkus
+quarkus.datasource.password=quarkus
+quarkus.datasource.jdbc.url=jdbc:postgresql://localhost:5432/quarkussocial
+quarkus.datasource.jdbc.max-size=16
+#quarkus.hibernate-orm.database.generation=drop-and-create
+quarkus.hibernate-orm.database.generation=update
+quarkus.hibernate-orm.log.sql=true
+
+
+#TEST
+%test.quarkus.datasource.db-kind=h2
+%test.quarkus.datasource.username=sa
+%test.quarkus.datasource.password=sa
+%test.quarkus.datasource.jdbc.url=jdbc:h2:mem:quarkussocial
+%test.quarkus.datasource.jdbc.max-size=16
+#quarkus.hibernate-orm.database.generation=drop-and-create
+%test.quarkus.hibernate-orm.database.generation=drop-and-create
+%test.quarkus.hibernate-orm.log.sql=true
+
+#SWAGGER-UI - OPENAPI
+quarkus.swagger-ui.always-include=true
+#SWAGGER-UI - THEMES 
+#https://quarkus.io/guides/openapi-swaggerui
+#original, feeling-blue, flattop, material, monokai, muted, newspaper, outline
+quarkus.swagger-ui.theme=material

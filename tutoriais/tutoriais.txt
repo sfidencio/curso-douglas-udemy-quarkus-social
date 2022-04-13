@@ -1,0 +1,2 @@
+1. Aborda sobre as annotations do OpenAPI/Swagger-UI
+https://dev.to/lucasscharf/quarkus-openapi-uma-combinacao-tao-boa-que-deveria-se-chamar-bolo-de-chocolate-4eb7

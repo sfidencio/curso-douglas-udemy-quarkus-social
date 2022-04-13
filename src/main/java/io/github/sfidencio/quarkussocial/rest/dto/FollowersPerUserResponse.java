@@ -1,0 +1,11 @@
+package io.github.sfidencio.quarkussocial.rest.dto;
+
+import java.util.List;
+
+import lombok.Data;
+
+@Data
+public class FollowersPerUserResponse {
+	private Integer followersCount;
+	private List<FollowerResponse> followers;
+}
